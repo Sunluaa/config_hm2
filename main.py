@@ -82,9 +82,7 @@ def generate_plantuml(filename):
 
     with open(filename, 'w') as file:
         file.write('@startuml\n')
-        file.write('digraph G {\n')
         recursive_write(file, tree)
-        file.write('}\n')
         file.write('@enduml\n')
 
 # Загрузка конфигурации
